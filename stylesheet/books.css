@@ -1,0 +1,69 @@
+/* בסיסי */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* עיצוב דיב של התוכן */
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* עיצוב הטבלה */
+table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* עיצוב השורות */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* עיצוב הכפתורים */
+button {
+    padding: 6px 12px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* עיצוב אזור פרטי הספר */
+#bookDetails {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* כותרת אזור פרטי הספר */
+#bookDetails h3 {
+    margin-top: 0;
+    color: #333;
+}
