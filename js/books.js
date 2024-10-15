@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
         if (isUpdateMode && bookToUpdate) {
             console.log("update");
-            
+
             fetch(`http://localhost:3000/books/${bookToUpdate.id}`, {
                 method: 'PUT',
                 headers: {
@@ -124,6 +124,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${book.title}</td>
                 <td>$${book.price.toFixed(2)}</td>
                 <td><button class="read">בחר</button></td>
+                 <td><button class="delete" id="delete">מחק</button></td>
+                <td><button class="update" id="update">עדכון</button></td>
             </tr>`;
                     document.getElementById('addBookForm').reset();
                     document.getElementById('addBookForm').style = 'none'
