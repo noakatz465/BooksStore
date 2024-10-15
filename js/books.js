@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             console.log(data);
+            data.sort((a, b) => a.title.localeCompare(b.title));
 
             const bookList = document.getElementById('bookList');
             bookList.innerHTML = '';
